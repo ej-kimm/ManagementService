@@ -6,5 +6,8 @@
 @import './base/normalize';
 @import './base/reset';
 
+// mixins
+@import './mixins/text-style';
+
 // layouts
 @import './layouts/grids';
