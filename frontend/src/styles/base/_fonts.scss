@@ -22,6 +22,18 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-caret:before {
+  content: '\e903';
+}
+.ic-chevron:before {
+  content: '\e906';
+}
+.ic-close:before {
+  content: '\e907';
+}
+.ic-search:before {
+  content: '\e90d';
+}
 .ic-user:before {
   content: '\e971';
 }
