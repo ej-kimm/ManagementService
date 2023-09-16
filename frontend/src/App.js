@@ -18,7 +18,7 @@ function App() {
         <div className="row">
           <div className="col-sm-4 col-lg-8">
             {/* 백엔드에서 가져온 데이터입니다 : {hello} */}
-            <div className="button-group">
+            <div className="login-button-group">
               <button className="admin-button" type="button">
                 <i className="ic-key"></i>
               </button>

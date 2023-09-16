@@ -4,7 +4,7 @@
   height: 100vh;
   background-color: $background;
 
-  .button-group {
+  .login-button-group {
     @include flexbox;
     @include pos-center;
   }
