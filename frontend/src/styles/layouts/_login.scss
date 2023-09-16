@@ -1,0 +1,46 @@
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+
+  .button-group {
+    @include flexbox;
+    @include pos-center;
+  }
+
+  .admin-button,
+  .user-button {
+    @include flexbox;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    font-size: 50px;
+    color: $white;
+    background-color: $secondary;
+    border-radius: 50%;
+    opacity: 0.4;
+    box-shadow: 10px 10px 30px #000;
+    margin: 0 20px;
+    transition: background-color 300ms ease-in-out;
+
+    &:active {
+      background-color: $primary;
+    }
+  }
+
+  @include responsive(D) {
+    .admin-button,
+    .user-button {
+      width: 200px;
+      height: 200px;
+      font-size: 100px;
+      margin: 0 50px;
+      transition: transform 300ms ease-in-out;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
