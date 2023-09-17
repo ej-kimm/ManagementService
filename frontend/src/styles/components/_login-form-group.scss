@@ -1,0 +1,83 @@
+.login-form-group {
+  @include pos-center;
+  width: 300px;
+  height: 300px;
+  padding: 16px 8px;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid $border;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #bbb3b3;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &-header {
+    position: relative;
+    margin-bottom: 30px;
+
+    .title {
+      @include text-style(24, $primary);
+      text-align: center;
+    }
+
+    .close-button {
+      @include flexbox;
+      @include pos-center-y;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      font-size: 16px;
+      color: $white;
+      background-color: $secondary;
+      border-radius: 50%;
+      transition: background-color 200ms ease-in-out;
+
+      &:active,
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .login-form {
+    &-info {
+      .input-group {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-button {
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    width: 500px;
+    height: 500px;
+    padding: 48px 24px;
+
+    &-header {
+      margin-bottom: 60px;
+
+      .title {
+        font-size: 36px;
+      }
+    }
+
+    .login-form {
+      &-info {
+        .input-group {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

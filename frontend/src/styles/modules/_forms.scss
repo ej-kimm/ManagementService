@@ -65,7 +65,9 @@
     padding-left: 40px;
   }
 
-  .ic-search {
+  .ic-search,
+  .ic-user,
+  .ic-key {
     @include pos-center-y;
     left: 10px;
     font-size: 20px;
