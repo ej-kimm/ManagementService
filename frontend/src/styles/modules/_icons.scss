@@ -1,0 +1,29 @@
+i {
+  font-family: 'management' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-caret:before {
+  content: '\e903';
+}
+.ic-chevron:before {
+  content: '\e906';
+}
+.ic-close:before {
+  content: '\e907';
+}
+.ic-search:before {
+  content: '\e90d';
+}
+.ic-user:before {
+  content: '\e971';
+}
+.ic-key:before {
+  content: '\e98d';
+}
