@@ -78,9 +78,22 @@ export default function AdminHome() {
                     <i className="ic-search"></i>
                   </button>
 
-                  <button className="gnb-icon-button is-user" type="button">
-                    <i className="ic-user" />
-                  </button>
+                  <div className="my-menu">
+                    <button
+                      className="my-menu-button gnb-icon-button is-user"
+                      type="button"
+                    >
+                      <i className="ic-user" />
+                    </button>
+
+                    <div className="my-menu-content lg-only">
+                      <ul className="my-menu-list">
+                        <li className="my-menu-item">
+                          <button type="button">로그아웃</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
                   <button
                     className="gnb-icon-button is-menu sm-only"
