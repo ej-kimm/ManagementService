@@ -10,10 +10,6 @@
     .button-group {
       @include flexbox(end);
     }
-
-    .gnb-search-button {
-      margin-right: 4px;
-    }
   }
 
   &-icon-button {
@@ -22,6 +18,11 @@
     height: 32px;
     font-size: 24px;
     color: $secondary;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .logo {

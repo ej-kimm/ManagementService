@@ -45,15 +45,16 @@ export default function AdminHome() {
                 </div>
 
                 <div className="button-group">
-                  <button
-                    className="gnb-search-button gnb-icon-button sm-only"
-                    type="button"
-                  >
+                  <button className="gnb-icon-button sm-only" type="button">
                     <i className="ic-search"></i>
                   </button>
 
                   <button className="gnb-icon-button" type="button">
                     <i className="ic-user" />
+                  </button>
+
+                  <button className="gnb-icon-button sm-only" type="button">
+                    <i className="ic-menu" />
                   </button>
                 </div>
               </div>

@@ -12,11 +12,20 @@ i {
 .ic-caret:before {
   content: '\e903';
 }
+.ic-check:before {
+  content: '\e905';
+}
 .ic-chevron:before {
   content: '\e906';
 }
 .ic-close:before {
   content: '\e907';
+}
+.ic-menu:before {
+  content: '\e90b';
+}
+.ic-new:before {
+  content: '\e90c';
 }
 .ic-search:before {
   content: '\e90d';
