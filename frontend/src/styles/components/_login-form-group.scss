@@ -8,7 +8,7 @@
   border: 1px solid $border;
   background-color: $white;
   border-radius: 20px;
-  box-shadow: 10px 10px 30px #bbb3b3;
+  box-shadow: $form-shadow;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 
   &.is-active {
