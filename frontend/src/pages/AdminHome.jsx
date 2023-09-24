@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.svg'
 import { useNavigate } from 'react-router-dom'
 
 export default function AdminHome() {
-  const [activeMenu, setActiveMenu] = useState(null)
+  const [activeMenu, setActiveMenu] = useState('inventory')
   const navigate = useNavigate()
 
   const handleNavigate = (menuName) => {
@@ -78,7 +78,7 @@ export default function AdminHome() {
                     <i className="ic-search"></i>
                   </button>
 
-                  <button className="gnb-icon-button" type="button">
+                  <button className="gnb-icon-button is-user" type="button">
                     <i className="ic-user" />
                   </button>
 

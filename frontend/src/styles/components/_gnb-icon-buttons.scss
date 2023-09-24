@@ -4,8 +4,9 @@
   height: 32px;
   font-size: 24px;
   color: $secondary;
+  border-radius: 50%;
   margin-right: 4px;
-  transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 
   &.is-menu {
     color: $purple-dark;
@@ -21,5 +22,16 @@
 
   &:active {
     color: $primary;
+  }
+
+  @include responsive(D) {
+    &.is-user {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $purple;
+    }
   }
 }
