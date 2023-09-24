@@ -2,6 +2,7 @@
 @import './constants/colors';
 @import './constants/typography';
 @import './constants/breakpoints';
+@import './constants/box-shadows';
 
 // base
 @import './base/fonts';
@@ -22,6 +23,9 @@
 
 // components
 @import './components/login-form-group';
+@import './components/gnb-nav';
+@import './components/gnb-icon-buttons';
+@import './components/my-menu';
 
 // layouts
 @import './layouts/grids';

@@ -1,13 +1,24 @@
 import React, { useState } from 'react'
 
 export default function Login() {
+  const [userInfo, setUserInfo] = useState({ id: '', password: '' })
   const [showLoginForm, setShowLoginForm] = useState(false)
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setUserInfo({ id: '', password: '' })
+  }
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setUserInfo({ ...userInfo, [name]: value })
+    console.log(name, value)
+  }
   const handleShowLoginForm = () => {
     setShowLoginForm(true)
   }
   const handleCloseLoginForm = () => {
     setShowLoginForm(false)
+    setUserInfo({ id: '', password: '' })
   }
 
   return (
@@ -47,13 +58,16 @@ export default function Login() {
                 </button>
               </header>
 
-              <form className="login-form" action="/" method="POST">
+              <form className="login-form" onSubmit={handleSubmit}>
                 <div className="login-form-info">
                   <div className="input-group">
                     <i className="ic-user" aria-hidden></i>
                     <input
                       className="form-input"
                       type="text"
+                      name="id"
+                      value={userInfo.id}
+                      onChange={handleChange}
                       placeholder="아이디"
                     />
                   </div>
@@ -62,6 +76,9 @@ export default function Login() {
                     <input
                       className="form-input"
                       type="password"
+                      name="password"
+                      value={userInfo.password}
+                      onChange={handleChange}
                       placeholder="비밀번호"
                     />
                   </div>
