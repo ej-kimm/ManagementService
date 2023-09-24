@@ -53,7 +53,10 @@ export default function AdminHome() {
                     <i className="ic-user" />
                   </button>
 
-                  <button className="gnb-icon-button sm-only" type="button">
+                  <button
+                    className="gnb-icon-button is-menu sm-only"
+                    type="button"
+                  >
                     <i className="ic-menu" />
                   </button>
                 </div>

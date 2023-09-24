@@ -12,19 +12,6 @@
     }
   }
 
-  &-icon-button {
-    @include flexbox;
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    color: $secondary;
-    margin-right: 4px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
   .logo {
     a {
       display: block;
