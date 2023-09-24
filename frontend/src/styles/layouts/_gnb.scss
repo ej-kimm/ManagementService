@@ -36,4 +36,31 @@
       height: 50px;
     }
   }
+
+  @include responsive(D) {
+    &-left {
+      @include flexbox(start);
+    }
+
+    &-right {
+      @include flexbox(end);
+
+      .input-group {
+        width: 264px;
+        margin-right: 24px;
+      }
+    }
+
+    &-wrapper {
+      height: 80px;
+    }
+
+    .logo {
+      margin-right: 32px;
+
+      img {
+        height: 70px;
+      }
+    }
+  }
 }
