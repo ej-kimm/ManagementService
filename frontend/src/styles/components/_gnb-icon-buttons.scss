@@ -29,7 +29,8 @@
       margin-right: 0;
     }
 
-    &:hover {
+    &:hover,
+    &.is-active {
       color: $white;
       background-color: $purple;
     }
